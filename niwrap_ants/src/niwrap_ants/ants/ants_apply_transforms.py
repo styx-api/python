@@ -6,7 +6,7 @@ import pathlib
 from styxdefs import *
 
 ANTS_APPLY_TRANSFORMS_METADATA = Metadata(
-    id="e900efb5c61d125a4b8b98be92b7c777df8489a4.boutiques",
+    id="b2a458e411cfbc6687dbc4a31f95f2b6ac33d716.boutiques",
     name="antsApplyTransforms",
     package="ants",
     container_image_tag="antsx/ants:v2.5.3",
@@ -896,7 +896,7 @@ def ants_apply_transforms_bspline_cargs(
     """
     cargs = []
     if params.get("order", None) is not None:
-        cargs.append("BSpline[" + "order=" + str(params.get("order", None)) + "]")
+        cargs.append("BSpline[" + str(params.get("order", None)) + "]")
     return cargs
 
 
